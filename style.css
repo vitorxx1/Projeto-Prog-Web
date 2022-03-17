@@ -134,3 +134,65 @@ main{
 a{
     text-decoration: none;
 }
+
+@media only screen and (max-width: 768px) {
+    html, body{
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    #wrapper {
+        width: 100%;
+    }
+
+    #TopDiv-Container-left {
+        width: 100%;
+    }
+
+    #TopDiv-Container-right {
+        width: 100%;
+    }
+
+    #header-cointainer{
+        width: 100%;
+    }
+
+    #header-container-logo{
+        width: 100%;
+    }
+
+    #nav-menu{
+        display: none;
+    }
+
+    #header-container-utility{
+        width: 100%;
+    }
+
+     #utility-conta{
+        width: 100%;
+    }
+
+    #utility-conta-botao{
+        display: none;
+    }
+
+    #utility-conta-acessar{
+        display: none;
+    }
+
+    #main-container-left{
+        width: 100%;
+    }
+
+    #main-container-right{
+        display: none;
+    }
+
+    #conta-fixed{
+        display: none;
+    }
+}
