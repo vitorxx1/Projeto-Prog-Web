@@ -1,6 +1,8 @@
 html, body{
     height: 100%;
     margin: 0;
+    font-size: 62.5%;
+    /* 1rem = 10px*/
 }
 
 body {
@@ -22,7 +24,9 @@ div{
 }
 
 #TopDiv{
-    height: 5%;
+    position: relative;
+    height: 55px;
+    width: 100%;
     background-color: rgb(22, 22, 22);
     color: white;
 }
@@ -69,18 +73,19 @@ div{
 }
 
 header{
-    height: 10%;
-    margin-top: 10px;
+    height: 7.5rem;
 }
 
 #header-cointainer{
-    display: flex;
+    left: 0;
+    max-height: 75px;
     position: relative;
-    top: 15%;
-    height: 70%;
-    width: 75%;
-    margin: auto;
+    right: 0;
+    top: 15px;
+    z-index: 2;
     align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 #header-container-logo{
@@ -146,6 +151,7 @@ li{
     border-radius: 8px;
     padding: 5px 15px;
     margin-right: 15px;
+    min-width: auto;
 }
 
 #utility-conta-acessar{
@@ -168,7 +174,8 @@ li{
 }
 
 #utility-conta-bandeira{
-    margin-left: 20px;
+    display: inline-block;
+    margin-left: 2rem;
 }
 
 #main-container{
@@ -176,6 +183,7 @@ li{
     margin: auto;
     display: flex;
     position: relative;
+    align-items: center;
 }
 
 .main-container-left-items{
@@ -210,21 +218,19 @@ li{
 
 #main-container-right{
     width: 50%;
-    position: absolute; 
     right: 0px;
     display: flex;
-    flex-direction: row-reverse;
 }
 
 #conta-fixed{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
     text-align: center;
     position: fixed;
     bottom: 0;
-    right: 50px;
-    width: 250px;
-    height: 40px;
+    right: 5rem;
+    width: 25rem;
+    height: 4rem;
     background-color: #8dc63f;
     color: white;
 }
@@ -239,6 +245,7 @@ button{
 
 @media only screen and (max-width: 768px) {
     html, body{
+        font-size: 17px;
         width: 100%;
     }
 
@@ -250,8 +257,14 @@ button{
         width: 100%;
     }
 
-    #TopDiv-Container-left {
+    #TopDiv {
         width: 100%;
+    }
+
+    #TopDiv-Container-left {
+        width: 200%;
+        font-size: 12px;
+        line-height: 15px;
     }
 
     #TopDiv-Container-right {
@@ -266,6 +279,14 @@ button{
         width: 100%;
     }
 
+    #header-conteiner-nav{
+
+    }
+
+    nav{
+        height: 0px ;
+    }
+
     #nav-menu{
         display: none;
     }
@@ -276,6 +297,7 @@ button{
 
      #utility-conta{
         width: 100%;
+        justify-content: end;
     }
 
     #utility-conta-botao{
@@ -286,8 +308,14 @@ button{
         display: none;
     }
 
+    #utility-conta-bandeira{
+        margin-right: 2rem;
+    }
+
     #main-container-left{
         width: 100%;
+        font-size: 12px;
+        line-height: 15px;
     }
 
     #main-container-right{
