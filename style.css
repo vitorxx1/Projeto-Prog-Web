@@ -19,10 +19,6 @@ body {
     min-height: 100%;
 }
 
-div{
-    
-}
-
 #TopDiv{
     position: relative;
     height: 55px;
@@ -183,7 +179,6 @@ li{
     margin: auto;
     display: flex;
     position: relative;
-    align-items: center;
 }
 
 .main-container-left-items{
@@ -219,7 +214,18 @@ li{
 #main-container-right{
     width: 50%;
     right: 0px;
+    position: relative;
+}
+
+#button-central-ajuda{
     display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    background: white;
+    font-size: 12pt;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
 }
 
 #conta-fixed{
