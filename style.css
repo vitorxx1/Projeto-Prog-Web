@@ -285,10 +285,6 @@ button{
         width: 100%;
     }
 
-    #header-conteiner-nav{
-
-    }
-
     nav{
         height: 0px ;
     }
@@ -325,6 +321,10 @@ button{
     }
 
     #main-container-right{
+        display: none;
+    }
+
+    #button-central-ajuda{
         display: none;
     }
 
