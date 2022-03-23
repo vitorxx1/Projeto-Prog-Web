@@ -2,7 +2,6 @@ html, body{
     height: 100%;
     margin: 0;
     font-size: 62.5%;
-    /* 1rem = 10px*/
 }
 
 body {
@@ -66,6 +65,7 @@ body {
 
 #link-simulacao:hover{
     background-color: rgb(223, 223, 223);
+    cursor: all-scroll;
 }
 
 header{
@@ -105,11 +105,17 @@ nav{
     margin-right: 20px;
 }
 
+ul{
+    display: flex;
+}
+
 li{
-    display: inline;
+    display: flex;
+    align-items: center;
 }
 
 .nav-menu-item{
+    
     text-align: center;
     color: rgb(0, 0, 0);
     font-size: 11pt;
@@ -150,6 +156,10 @@ li{
     min-width: auto;
 }
 
+#utility-conta-botao:hover{
+    cursor: all-scroll;
+}
+
 #utility-conta-acessar{
     background: white;
     border: 1px solid rgb(255, 122, 0);
@@ -163,6 +173,7 @@ li{
 
 #utility-conta-acessar:hover{
     background-color: rgb(223, 223, 223);
+    cursor: all-scroll;
 }
 
 #utility-conta-acessar:active{
@@ -223,9 +234,14 @@ li{
     position: absolute;
     right: 0px;
     background: white;
-    font-size: 12pt;
+    font-size: 13pt;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+    padding-right: 30px;
+}
+
+#button-central-ajuda{
+    cursor: all-scroll;
 }
 
 #conta-fixed{
@@ -239,6 +255,10 @@ li{
     height: 4rem;
     background-color: #8dc63f;
     color: white;
+}
+
+#conta-fixed:hover{
+    cursor: all-scroll;
 }
 
 a{
