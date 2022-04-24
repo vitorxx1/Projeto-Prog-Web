@@ -148,9 +148,61 @@
                 </div>
             </main>
 
+            <div id="conteiner-fipe">
+                <div id="title-div">
+                    <h1 style="text-align: center;color: rgb(255, 122, 0);">Consulta de Tabela Fipe</h1>
+                </div>
+                
+                <div id = "content-div">
+                    <div id="forms-div">
+                        <p style="text-align: center;font-weight: 600;">Entre com os valores de busca</p>
+        
+                        <form id="form-fipe" action="#" autocomplete="off" >
+                            <div id="form-inputs">
+                                <label for="datalist-tipos">Tipo do Veículo</label><br>
+                                <input required class="datalist" list="datalist-tipos" id="input-datalist-tipos" placeholder="Digite e selecione um valor">
+                                <datalist id="datalist-tipos">
+                                    <option value="Carro">
+                                    <option value="Moto">
+                                    <option value="Caminhão">
+                                </datalist>
+                                <br>
+            
+                                <label for="datalist-marcas">Marca</label><br>
+                                <input required class="datalist" list="datalist-marcas" id="input-datalist-marcas" placeholder="Digite e selecione um valor">
+                                <datalist id="datalist-marcas"></datalist>
+                                <br>
+            
+                                <label for="datalist-modelos">Modelo</label><br>
+                                <input required class="datalist" list="datalist-modelos" id="input-datalist-modelos" placeholder="Digite e selecione um valor">
+                                <datalist id="datalist-modelos"></datalist>
+                                <br>
+            
+                                <label for="datalist-anos">Ano</label><br>
+                                <input required class="datalist" list="datalist-anos" id="input-datalist-anos" placeholder="Digite e selecione um valor">
+                                <datalist id="datalist-anos"></datalist>
+                                <br>
+                            </div>
+        
+                            <div id="form-submit">
+                                <input type="submit" value="Buscar">
+                            </div>
+                        </form>
+                    </div>
+        
+                    <div id="result-div">
+                        <p style="text-align: center;font-weight: 600;">Resultado da busca</p>
+                        <table id="result-fipe"></table>
+                    </div>
+                </div>
+            </div>
+
             <button id="conta-fixed">
                 ABRIR CONTA GRATUITA
             </button>
         </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
     </body>
 </html>
