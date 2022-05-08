@@ -1,12 +1,6 @@
 const URL_API_LOGIN = "https://reqres.in";
 let request_login = new XMLHttpRequest();
 
-function enableSearch() {
-  if (localStorage.getItem("token")) {
-    document.getElementsByClassName('btnLogin')[0].style.display = 'none';
-    document.getElementsByClassName('container-fipe')[0].style.display = 'block';
-  }
-}
 function login() {
 
   const email = document.getElementById('email').value;
