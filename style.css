@@ -148,7 +148,7 @@ li{
     margin-right: 30px;
 }
 
-#utility-conta-botao{
+#utlity-conta-botao{
     background: rgb(255, 122, 0);
     height: 48px;
     color: white;
@@ -160,11 +160,11 @@ li{
     min-width: auto;
 }
 
-#utility-conta-botao:hover{
+#utlity-conta-botao:hover{
     cursor: pointer;
 }
 
-#utility-conta-acessar{
+#loginBtn{
     background: white;
     border: 1px solid rgb(255, 122, 0);
     border-radius: 8px;
@@ -173,14 +173,16 @@ li{
     font-size: 11pt;
     height: 48px;
     padding: 3px 10px;
+    
 }
 
-#utility-conta-acessar:hover{
+#loginBtn:hover{
     background-color: rgb(223, 223, 223);
+    
     cursor: pointer;
 }
 
-#utility-conta-acessar:active{
+#loginBtn:active{
     border: 2px solid rgb(0, 0, 0);
 }
 
@@ -273,8 +275,10 @@ button{
     border: none;
 }
 
+
 #conteiner-fipe{
     position: relative;
+    display: none;
 }
 
 #title-div{
@@ -482,4 +486,22 @@ label{
     #conta-fixed{
         display: none;
     }
+
+    #content-div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #forms-div{
+        align-items: center;
+    }
+
+    #result-div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 24px
+    }
 }
+
